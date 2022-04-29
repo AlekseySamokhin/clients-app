@@ -170,4 +170,5 @@
   align-self: center;
   padding-bottom: 1px;
   border-bottom: 1px solid var(--color-black3);
+  color: var(--color-black3);
 }

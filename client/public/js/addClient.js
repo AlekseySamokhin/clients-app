@@ -1,4 +1,5 @@
-import { createClientsFofm, createElement } from "./index.js";
+import { createClientsFofm } from "./createModalForm.js";
+import { createElement } from "./index.js";
 
 export const addClientModal = () => {
   const createForm = createClientsFofm();

@@ -34,6 +34,7 @@
   --color-silver-chalice: #b0b0b0;
   --color-emerald: #43c759;
   --color-red: #ff5232;
+  --color-mischka: #e7e5eb;
 }
 
 .site-btn {
@@ -111,5 +112,27 @@ a {
   opacity: 0;
 }
 
-.modal_btn_contact--active {
+.site-tooltip {
+  position: absolute;
+  top: -41px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  padding: 7px 15px;
+  background-color: var(--color-black3);
+}
+
+.site-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%);
+  clip-path: polygon(100% 0, 0 0, 51% 100%);
+  background-color: var(--color-black3);
 }
